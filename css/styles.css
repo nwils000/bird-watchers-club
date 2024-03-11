@@ -16,4 +16,16 @@ body {
 h1 {
   font-size: 4.5rem;
   text-align: center;
+  display: inline;
+}
+
+.title-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dove-icon {
+  height: 3.7rem;
 }
