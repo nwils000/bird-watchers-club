@@ -24,6 +24,11 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 8rem;
+  background-image: url('../assets/dove-flying.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .dove-icon {
