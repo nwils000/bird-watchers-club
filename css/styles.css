@@ -1,5 +1,6 @@
 @import './normalize.css';
 
+/* Global styles */
 h1,
 h2,
 h3,
@@ -11,7 +12,10 @@ h6 {
 
 body {
   font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f0f2;
 }
+
+/* Header styles */
 
 h1 {
   font-size: 4.5rem;
@@ -84,4 +88,22 @@ nav > ul li a:hover {
   text-decoration: none;
   color: rgb(161, 81, 79);
   font-weight: 500;
+}
+
+/* Main/Aside styles */
+
+main {
+  display: flex;
+  margin: 1.5rem;
+  gap: 1.5rem;
+}
+
+.first-section {
+  padding: 2rem;
+  background-color: gray;
+  flex-grow: 3;
+}
+
+aside {
+  background-color: lightcoral;
 }
