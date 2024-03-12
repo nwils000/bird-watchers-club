@@ -1,6 +1,11 @@
 @import './normalize.css';
 
 /* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -107,6 +112,7 @@ main {
   display: flex;
   margin: 1.5rem;
   padding: 7rem;
+  height: calc(100vh - 46px);
 }
 
 .first-section {
