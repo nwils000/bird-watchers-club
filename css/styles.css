@@ -17,20 +17,39 @@ h1 {
   font-size: 4.5rem;
   text-align: center;
   display: inline;
+  color: rgb(221, 221, 221);
+  text-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 
-.title-icon-wrapper {
+header {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.heading-image-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 8rem;
-  background-image: url('../assets/dove-flying.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  image-rendering: -webkit-optimize-contrast;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header > img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
 }
 
 .dove-icon {
   height: 3.7rem;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
 }
