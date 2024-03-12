@@ -131,3 +131,19 @@ aside section a img {
   height: 100%;
   margin: auto;
 }
+
+/* Footer Styles */
+footer {
+  margin-left: 7rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.8rem;
+}
+
+.author-date-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
