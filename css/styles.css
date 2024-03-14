@@ -54,6 +54,15 @@ nav label {
 .dark-mode-checkbox:checked ~ header label {
   background-image: url(../assets/dove.png);
 }
+.dark-mode-checkbox:checked ~ header nav .bouncing-arrow {
+  background-image: url(../assets/left-arrow-black.png);
+}
+.dark-mode-checkbox:checked ~ header nav .toggle-text {
+  color: black;
+}
+.dark-mode-checkbox:checked ~ header nav ul li a {
+  color: black;
+}
 .dark-mode-checkbox:checked ~ header .background-image {
   opacity: 0.5;
 }
@@ -115,6 +124,42 @@ nav {
   transform: translate(-50%);
   background-color: rgba(208, 105, 102);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.093);
+}
+
+.bouncing-arrow {
+  width: 40px;
+  height: 40px;
+  background: url(../assets/left-arrow-white.png);
+  animation: bounce 1.2s infinite;
+  display: block;
+  position: relative;
+  bottom: 42px;
+  left: 6.5rem;
+  background-size: contain;
+}
+
+.toggle-text {
+  position: relative;
+  bottom: 88px;
+  left: 9.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
 }
 
 nav > ul {
