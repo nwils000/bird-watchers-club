@@ -17,7 +17,6 @@ h6 {
 
 body {
   font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f6f0f2;
 }
 
 /* Header styles */
@@ -55,6 +54,7 @@ header {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
+  position: fixed;
 }
 
 .dove-icon {
@@ -110,16 +110,19 @@ nav > ul li a:hover {
 
 main {
   display: flex;
-  margin: 1.5rem;
-  padding: 7rem;
-  height: calc(100vh - 46px);
+  padding: 8.5rem;
+  height: 100vh;
   align-items: center;
+  z-index: 2;
+  position: relative;
+  background-color: #f6f0f2;
 }
 
 .first-section {
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   flex-grow: 3;
   padding-right: 7rem;
+  overflow: hidden;
 }
 
 aside {
@@ -151,12 +154,18 @@ aside section a img {
 
 /* Footer Styles */
 footer {
-  margin-left: 7rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  background-color: #f6f0f2;
+  position: relative;
+}
+
+footer hr {
+  margin: 0;
 }
 
 footer p {
   margin: 0.8rem;
+  padding-left: 8.5rem;
 }
 
 .author-date-wrapper {
