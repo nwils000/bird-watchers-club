@@ -147,3 +147,13 @@ footer p {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(208, 105, 102);
+  border-radius: 10px;
+}
