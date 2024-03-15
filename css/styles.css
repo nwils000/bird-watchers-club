@@ -257,6 +257,11 @@ aside section a img {
   margin: auto;
 }
 
+aside section a img:hover {
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+
 /* Footer Styles */
 footer {
   font-size: 1rem;
