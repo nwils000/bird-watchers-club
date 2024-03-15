@@ -42,41 +42,44 @@ nav label {
   top: 0.5rem;
 }
 
-.dark-mode-checkbox:checked ~ main {
-  background-color: #121212;
-  color: rgb(239, 239, 239);
-}
+/* Dark mode general */
+.dark-mode-checkbox:checked ~ header,
+.dark-mode-checkbox:checked ~ main,
 .dark-mode-checkbox:checked ~ footer {
   background-color: #121212;
   color: rgb(239, 239, 239);
 }
 
-.dark-mode-checkbox:checked ~ header label {
-  background-image: url(../assets/white-dove.png);
+/* Dark mode navigation */
+.dark-mode-checkbox:checked ~ header nav {
+  background-color: #121212;
 }
-.dark-mode-checkbox:checked ~ header nav .bouncing-arrow {
-  background-image: url(../assets/left-arrow-white.png);
-}
-.dark-mode-checkbox:checked ~ header nav .toggle-text {
-  color: rgb(239, 239, 239);
-}
-.dark-mode-checkbox:checked ~ header nav .toggle-text::before {
-  content: 'Light Mode?';
-}
+
+.dark-mode-checkbox:checked ~ header nav .toggle-text,
 .dark-mode-checkbox:checked ~ header nav ul li a {
   color: rgb(239, 239, 239);
 }
+
+.dark-mode-checkbox:checked ~ header nav .toggle-text::before {
+  content: 'Light Mode?';
+}
+
 .dark-mode-checkbox:checked ~ header nav ul li a:hover {
   color: #ffffff61;
 }
-.dark-mode-checkbox:checked ~ header .background-image {
-  opacity: 0.5;
+
+.dark-mode-checkbox:checked ~ header label {
+  background-image: url(../assets/white-dove.png);
 }
+
+.dark-mode-checkbox:checked ~ header .background-image,
 .dark-mode-checkbox:checked ~ main aside {
   background-color: #292929;
+  box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.072);
 }
-.dark-mode-checkbox:checked ~ header nav {
-  background-color: #121212;
+
+.dark-mode-checkbox:checked ~ header nav .bouncing-arrow {
+  background-image: url(../assets/left-arrow-white.png);
 }
 
 /* Header styles */
