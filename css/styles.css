@@ -60,6 +60,9 @@ nav label {
 .dark-mode-checkbox:checked ~ header nav .toggle-text {
   color: black;
 }
+.dark-mode-checkbox:checked ~ header nav .toggle-text::before {
+  content: 'Light Mode?';
+}
 .dark-mode-checkbox:checked ~ header nav ul li a {
   color: black;
 }
@@ -144,6 +147,10 @@ nav {
   left: 9.5rem;
   font-weight: 500;
   color: white;
+}
+
+.toggle-text::before {
+  content: 'Dark Mode?';
 }
 
 @keyframes bounce {
