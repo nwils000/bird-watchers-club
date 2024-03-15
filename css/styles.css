@@ -66,6 +66,9 @@ nav label {
 .dark-mode-checkbox:checked ~ header nav ul li a {
   color: black;
 }
+.dark-mode-checkbox:checked ~ header nav ul li a:hover {
+  color: rgba(0, 0, 0, 0.391);
+}
 .dark-mode-checkbox:checked ~ header .background-image {
   opacity: 0.5;
 }
