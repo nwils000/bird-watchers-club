@@ -76,7 +76,7 @@ nav label {
   background-color: #292929;
 }
 .dark-mode-checkbox:checked ~ header nav {
-  background-color: #000000;
+  background-color: #121212;
 }
 
 /* Header styles */
