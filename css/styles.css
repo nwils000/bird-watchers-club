@@ -50,6 +50,10 @@ nav label {
   color: rgb(239, 239, 239);
 }
 
+.dark-mode-checkbox:checked ~ header .background-image {
+  opacity: 0.55;
+}
+
 /* Dark mode navigation */
 .dark-mode-checkbox:checked ~ header nav {
   background-color: #121212;
