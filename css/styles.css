@@ -32,7 +32,7 @@ body {
 
 nav label {
   cursor: pointer;
-  background-image: url(../assets/white-dove.png);
+  background-image: url(../assets/dove.png);
   width: 4rem;
   height: 4rem;
   display: block;
@@ -43,34 +43,40 @@ nav label {
 }
 
 .dark-mode-checkbox:checked ~ main {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: #121212;
+  color: rgb(239, 239, 239);
 }
 .dark-mode-checkbox:checked ~ footer {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: #121212;
+  color: rgb(239, 239, 239);
 }
 
 .dark-mode-checkbox:checked ~ header label {
-  background-image: url(../assets/dove.png);
+  background-image: url(../assets/white-dove.png);
 }
 .dark-mode-checkbox:checked ~ header nav .bouncing-arrow {
-  background-image: url(../assets/left-arrow-black.png);
+  background-image: url(../assets/left-arrow-white.png);
 }
 .dark-mode-checkbox:checked ~ header nav .toggle-text {
-  color: black;
+  color: rgb(239, 239, 239);
 }
 .dark-mode-checkbox:checked ~ header nav .toggle-text::before {
   content: 'Light Mode?';
 }
 .dark-mode-checkbox:checked ~ header nav ul li a {
-  color: black;
+  color: rgb(239, 239, 239);
 }
 .dark-mode-checkbox:checked ~ header nav ul li a:hover {
-  color: rgba(0, 0, 0, 0.391);
+  color: #ffffff61;
 }
 .dark-mode-checkbox:checked ~ header .background-image {
   opacity: 0.5;
+}
+.dark-mode-checkbox:checked ~ main aside {
+  background-color: #292929;
+}
+.dark-mode-checkbox:checked ~ header nav {
+  background-color: #000000;
 }
 
 /* Header styles */
@@ -135,7 +141,7 @@ nav {
 .bouncing-arrow {
   width: 40px;
   height: 40px;
-  background: url(../assets/left-arrow-white.png);
+  background: url(../assets/left-arrow-black.png);
   animation: bounce 1.2s infinite;
   display: block;
   position: relative;
@@ -149,7 +155,7 @@ nav {
   bottom: 88px;
   left: 9.5rem;
   font-weight: 500;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .toggle-text::before {
