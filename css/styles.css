@@ -132,6 +132,11 @@ header {
   transform: translate(0, -50%);
 }
 
+header nav .fa-bars {
+  color: white;
+  display: none;
+}
+
 nav {
   position: absolute;
   top: 0;
@@ -150,14 +155,14 @@ nav {
   animation: bounce 1.2s infinite;
   display: block;
   position: relative;
-  bottom: 42px;
+  bottom: 44px;
   left: 6.5rem;
   background-size: contain;
 }
 
 .toggle-text {
   position: relative;
-  bottom: 88px;
+  bottom: 90px;
   left: 9.5rem;
   font-weight: 500;
   color: rgb(0, 0, 0);
@@ -318,6 +323,22 @@ footer p {
 @media screen and (max-width: 1005px) {
   h1 {
     font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  header nav .fa-bars {
+    color: white;
+    display: inline;
+    font-size: 25px;
+  }
+  nav > ul {
+    justify-content: end;
+    padding-right: 4rem;
+    width: 80px;
+  }
+  ul li {
+    display: none;
   }
 }
 
